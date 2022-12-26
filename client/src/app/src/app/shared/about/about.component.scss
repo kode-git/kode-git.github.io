@@ -1,0 +1,126 @@
+@media only screen and (min-width: 1920px) {
+    #main {
+        background: url("https://res.cloudinary.com/dcl67luxn/image/upload/v1543874348/Web_1920_1.svg") no-repeat;
+        height: 1080px;
+    }
+    #name {
+        font-size: 6.5rem;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+    #main {
+        background: url("https://res.cloudinary.com/dcl67luxn/image/upload/v1543874529/Web_1366_2.svg") no-repeat;
+        height: 768px;
+    }
+
+    #name {
+        font-size: 6.5rem;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+    #main {
+        background: url("https://res.cloudinary.com/dcl67luxn/image/upload/v1543874535/Web_1280_1.svg") no-repeat;
+        height: 800px;
+    }
+    
+    #name {
+        font-size: 6.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    #main {
+        background: url("https://res.cloudinary.com/dcl67luxn/image/upload/v1543874570/iPad_1.svg") no-repeat;
+        height: 1024px;
+    }
+
+    #name {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #main {
+        background: url("https://res.cloudinary.com/dcl67luxn/image/upload/v1543874575/iPhone_6-7-8_1.svg") no-repeat;
+        height: 736px;
+    }
+
+    #name {
+        font-size: 3.5rem;
+        margin-left: 20px !important;
+    }
+
+    .line-1 {
+        margin-left: 20px !important;
+    }
+}
+
+#main {
+    background-size: cover;
+}
+
+/*Text Font */
+
+#name {
+    margin-left: 65px;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.paragraph{
+    width: 40%;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'San Francisco', Helvetica, Arial, san-serif;
+    font-size: 18px;
+}
+
+
+/* Global */
+.line-1 {
+    position: relative;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+/* Animation */
+.typewriter {
+    animation: typewriter 4s steps(48) 1s 1 normal both,
+        blinkTextCursor 500ms steps(48) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 11.2em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(0, 0, 0, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .paragraph{
+        width: 80%;
+    }
+}
