@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './src/app/shared/navbar/navbar.component';
-import { TerminalComponent } from './src/app/shared/terminal/terminal.component';
-import { IntroComponent } from './src/app/shared/intro/intro.component';
-import { AboutComponent } from './src/app/shared/about/about.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { TerminalComponent } from './shared/terminal/terminal.component';
+import { IntroComponent } from './shared/intro/intro.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
+
 
 @NgModule({
   declarations: [
@@ -13,11 +16,13 @@ import { AboutComponent } from './src/app/shared/about/about.component';
     NavbarComponent,
     TerminalComponent,
     IntroComponent,
-    AboutComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

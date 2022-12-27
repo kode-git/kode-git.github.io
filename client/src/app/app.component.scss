@@ -1,11 +1,12 @@
 .main{
-    background-image: url('../assets/gradient.jpeg');
+    background-image: url('../assets/gradient.png');
    
-  /* Full height */
-  height: 100%; 
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 74%;
 }
