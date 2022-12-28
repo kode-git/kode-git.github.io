@@ -1,0 +1,82 @@
+<div class="main">
+    <app-navbar></app-navbar>
+    <div class="container">
+        <div class="row">
+            <section class="window-container window-fixed-top">
+                <header class="window">
+                    <span class="button red"></span>
+                    <span class="button yellow"></span>
+                    <span class="button green"></span>
+                </header>
+                <div class="row window-main">
+                    <div class="content-side col-sm-2">
+                        <img class="profile-img" width=100px src="../../../assets/profile.jpg" alt="profile">
+                        <div class="name">Mario Sessa</div>
+                        <div class="mail">m.sessa65@icloud.com</div>
+                        <div class="info first">
+                            <span class="icon material-symbols-outlined">
+                                devices
+                            </span><span class="text-info">Software Engineer</span>
+                        </div>
+                        <div class="info location">
+                            <span class="icon material-symbols-outlined">
+                                location_on
+                            </span><span class="text-info">Bologna, BO</span>
+                        </div>
+                        <div class="info nation">
+                            <span class="icon material-symbols-outlined">
+                                flag
+                            </span><span class="text-info">Italy, IT</span>
+                        </div>
+                        <hr>
+                        <div>
+                            <img class="date-icon" width="20px" src="../../../assets/icon-date.png">
+                            <span class="date-text text-info">18 July 1997</span>
+                        </div>
+                        <div class="info-2">
+                            <img class="tweet-icon" width="20px" src="../../../assets/icon-tweet.png">
+                            <span class="tweet-text text-info"><a href="https://twitter.com/kodegit">@kodegit</a></span>
+                        </div>
+                        <div class="info-2">
+                            <img class="linkedin-icon" width="20px" src="../../../assets/icon-linkedin.png">
+                            <span class="likedin-text text-info"><a href="https://www.linkedin.com/in/mario-sessa/">/mario-sessa</a></span>
+                        </div>
+                        <div class="info-2">
+                            <img class="date-icon" width="20px" src="../../../assets/icon-git.png">
+                            <span class="git-text text-info"><a href="https://github.com/kode-git">kode-git</a></span>
+                        </div>
+                    </div>
+                    <div class="content-main col-md-2">
+                        <div class="skill-content">
+                            <h2 class="title-skill">Languages and Technologies</h2>
+                            <div class="skill-set">
+                                <div *ngFor="let skill of skills" class="row skill" style="background-color: {{skill.color}}">
+                                    <img class="col" src="{{skill.image}}" (alt)="skill.name">
+                                    <span class="progress" style="background-color: {{skill.backgroundColor}}">
+                                        <span class="progress-bar" 
+                                             role="progressbar" 
+                                             style="width: {{skill.level}}%" 
+                                             (aria-valuenow)="skill.level" 
+                                             aria-valuemin="0" 
+                                             aria-valuemax="100"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row languages-content">
+                    <div class="col">
+                        <img src="../../../assets/flags/english.png">
+                        <b>English:</b> Proficiency
+                    </div>  
+                    <div class="col">
+                        <img src="../../../assets/flags/italian.png">
+                        <b>Italian:</b> Mother Togue
+                    </div>  
+                    
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

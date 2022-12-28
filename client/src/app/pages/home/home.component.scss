@@ -1,0 +1,11 @@
+.main{
+    background-image: url('../../../assets/gradient.png');
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 74vh; /* minus the height of the footer */
+}

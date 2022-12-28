@@ -1,0 +1,238 @@
+.main{
+    background-image: url('../../../assets/gradient.png');
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 74vh; /* minus the height of the footer */
+}
+
+header.window {
+    background: #E0E8F0;
+    height: 30px;
+    border-radius: 8px 8px 0 0;
+    padding-left: 10px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}
+
+.window-container header .button {
+    width: 12px;
+    height: 12px;
+    margin: 10px 4px 0 0;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.content-side {
+    color: black;
+    background-color: #E0E8F0;
+    position: relative;
+    margin-top: -23px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: -28px;
+    min-height: 500px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.content-side .profile-img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.name {
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.mail{
+    font-size: 12px;
+}
+
+.date-icon {
+    margin-left: -38px;
+    margin-right: 7px;
+}
+
+.tweet-icon{
+    margin-left: -30px;
+    margin-right: 7px;
+}
+
+
+
+.content-main {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    min-width: 80%;
+    overflow: scoll;
+    background-color: white;
+    border-radius: 5px;
+    overflow-y: scoll;
+    padding-bottom: 20px;
+}
+
+.info-item {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 10px;
+}
+
+.info {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+.info-2{
+    margin-top: 10px;
+    margin-left: -25px;
+}
+
+.info-2 img{
+    border-radius: 5px;
+}
+
+.first {
+    margin-top: 50px;
+}
+
+
+.icon{
+    font-size: 12px;
+    margin-left: -10px;
+    margin-right: 7px;
+    margin-bottom: -5px;
+    padding: 4px;
+    color: white;
+    background-image: linear-gradient(rgb(59, 59, 59), gray);
+    border-radius: 5px;
+}
+
+.location {
+    margin-right: 30px;
+}
+
+.nation {
+    margin-right: 58px;
+}
+
+.text-info {
+    font-size: 12px;
+    color: black !important;
+    font-size: 12px;
+}
+
+.text-info a{
+    color: black;
+
+    &:hover{
+        font-weight: bold;
+    }
+}
+
+.linkedin-icon {
+    margin-left: -10px;
+    margin-right: 9px;
+}
+
+
+.success {
+    color:  #3BB662 !important;
+}
+
+.green {
+    background-color: #3BB662 !important;
+}
+
+.red {
+    background-color: #E75448 !important;
+}
+
+.yellow {
+    background-color: #E5C30F !important;
+}
+
+.window-container {
+    text-align: left;
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.window-fixed-top {
+    margin-top: 30px;
+}
+
+.col-sm-2{
+    max-width: 150px;
+}
+
+
+.window-main {
+    background-color: #d7dbde;
+    padding: 1.5em 1em 0em 2em;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: #FAFAFA;
+}
+
+.gray{
+    background-color: green;
+}
+
+.white{
+    background-color: white;
+}
+
+
+.skill-content {
+    max-height: 200px;
+}
+
+.skill-set {
+    overflow-y: scroll;
+    max-height: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.title-skill {
+    color: black;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.skill {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: gray;
+}
+
+.skill img{
+    max-width: 70px;
+}
+
+.progress{
+    margin-top: 15px;
+    width: 80%;
+}
+
+@media screen and (max-width: 750px){
+
+    .content-side{
+        min-width: 100%;
+        margin: 0 auto;
+        font-size: 10px;
+        width: 100% !important;
+    }
+}
