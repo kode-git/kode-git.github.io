@@ -11,7 +11,7 @@
 }
 
 header.window {
-    background: #E0E8F0;
+    background: #f3f3f3;
     height: 30px;
     border-radius: 8px 8px 0 0;
     padding-left: 10px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
@@ -27,13 +27,14 @@ header.window {
 
 .content-side {
     color: black;
-    background-color: #E0E8F0;
+    background-color: #f3f3f3;
     position: relative;
-    margin-top: -23px;
-    margin-bottom: 0px;
+    margin-top: -20px;
+    margin-bottom: 5px;
     padding-bottom: 0px;
     margin-left: -28px;
     min-height: 500px;
+    min-width: 200px;
     padding-top: 30px;
     text-align: center;
 }
@@ -111,7 +112,7 @@ header.window {
     margin-bottom: -5px;
     padding: 4px;
     color: white;
-    background-image: linear-gradient(rgb(59, 59, 59), gray);
+    background-image: linear-gradient(rgb(193, 193, 193), gray);
     border-radius: 5px;
 }
 
@@ -159,6 +160,7 @@ header.window {
     background-color: #E5C30F !important;
 }
 
+
 .window-container {
     text-align: left;
     width: 100%;
@@ -195,11 +197,6 @@ header.window {
     background-color: white;
 }
 
-
-.skill-content {
-    max-height: 200px;
-}
-
 .skill-set {
     overflow-y: scroll;
     max-height: 300px;
@@ -220,19 +217,74 @@ header.window {
 
 .skill img{
     max-width: 70px;
+    margin-left: 10px;
 }
 
 .progress{
     margin-top: 15px;
     width: 80%;
+    height: 8px;
+
 }
 
-@media screen and (max-width: 750px){
+.perc {
+    color: black;
+    font-size: 10px;
+    padding-top: 11px;
+    padding-left: 10px;
+}
+
+.divisor{
+    background-color: rgba(200, 200, 200, 0.632);
+    width: 80%;
+}
+
+.cv-content{
+    padding-top: 20px;
+    color: black;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.cv-btn{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-image: linear-gradient(white, rgb(239, 239, 239));
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.cv-btn:hover{
+    background-image: linear-gradient(rgb(239, 239, 239), white,);
+}
+
+.cv-btn:active{
+    background-image: linear-gradient(rgb(215, 215, 215), rgb(229, 229, 229),);
+
+}
+
+@media screen and (max-width: 1000px){
 
     .content-side{
         min-width: 100%;
         margin: 0 auto;
+        padding-left: 0px;
+        padding-right: 0px;
         font-size: 10px;
         width: 100% !important;
     }
+
+    .content-main{
+        min-height: 200%;
+    }
+
+    .perc{
+        padding-top: 0px;
+        margin: 0 auto;
+    }
+
+    
 }
