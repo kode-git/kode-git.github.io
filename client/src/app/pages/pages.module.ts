@@ -7,8 +7,10 @@ import { IntroComponent } from '../shared/intro/intro.component';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from '../app-routing.module';
-
-
+import { ProjectsComponent } from './projects/projects.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,10 +20,14 @@ import { AppRoutingModule } from '../app-routing.module';
     IntroComponent,
     FooterComponent,
     AboutComponent,
+    ProjectsComponent,
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTooltipModule,
+    BrowserModule,
+    HttpClientModule
   ],
   exports : [
     HomeComponent,

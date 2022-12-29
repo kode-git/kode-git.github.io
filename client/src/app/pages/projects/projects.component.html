@@ -8,7 +8,7 @@
                     <span class="button yellow"></span>
                     <span class="button green"></span>
                 </header>
-                <div class="row window-main">
+                <div class="window-main row">
                     <div class="content-side col-sm-2">
                         <img class="profile-img" width=100px src="../../../assets/profile.jpg" alt="profile">
                         <div class="name">Mario Sessa</div>
@@ -48,30 +48,32 @@
                         </div>
                     </div>
                     <div class="content-main col-md-2">
-                        <div class="skill-content">
-                            <h2 class="title-skill">Technologies</h2>
-                            <div class="skill-set">
-                                <div *ngFor="let skill of skills" class="row skill"
-                                    style="background-color: {{skill.color}}">
-                                    <img class="col" src="{{skill.image}}" (alt)="skill.name" [matTooltip]="skill.name">
-                                    <span class="progress" style="background-color: {{skill.backgroundColor}}">
-                                        <span class="progress-bar" role="progressbar" style="width: {{skill.level}}%"
-                                            (aria-valuenow)="skill.level" aria-valuemin="0" aria-valuemax="100"></span>
-                                    </span>
-                                    <span class="perc">{{skill.level}}%</span>
+                        <div class="row">
+                            <div *ngFor="let repo of repos" class="row repo" style="background-color:{{repo.color}}">
+                                <div class="header">
+                                    <img width="30px" src="../../../assets/icon-git.png">
+                                    <span class="title">{{repo.name}}</span>
+                                </div>
+                                <div class="description">
+                                    {{repo.description}}
+                                </div>
+                                <div class="tags">
+                                    <ul>
+                                        <li *ngFor="let topic of repo.topics">
+                                            {{topic}}
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <a href="{{repo.url}}" class="link">Source Code</a>
                                 </div>
                             </div>
-                            <div class="row cv-content">
-                                <button class="button cv-btn">Curriculum Vitae</button>
-                            </div>
                         </div>
-                    
-            
                     </div>
 
-
                 </div>
-        
+
+
             </section>
         </div>
     </div>
