@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 
 class Skill {
@@ -25,8 +26,11 @@ class Skill {
 export class AboutComponent implements OnInit {
 
   skills : Skill[];
+  cvForm : FormGroup;
 
   constructor() { 
+
+    // Temporal: Information will be store in a Redis database
     this.skills = [
       new Skill('Tensorflow', 90, 'assets/skills/tensorflow.png', '#FAFAFA', '#ECECEC'),
       new Skill('Nest', 89, 'assets/skills/nest.png', '#ECECEC', '#FAFAFA'),
@@ -48,17 +52,19 @@ export class AboutComponent implements OnInit {
       new Skill('Kubernetes', 40, 'assets/skills/kubernetes.png', '#ECECEC', '#FAFAFA'),
       new Skill('Apache Airflow', 30, 'assets/skills/airflow.png', '#FAFAFA', '#ECECEC'),
       new Skill('GraphQL', 20, 'assets/skills/graphql.png','#ECECEC', '#FAFAFA'),
-
-
-
-
-
-
-
     ]
+
+    this.cvForm = new FormGroup({
+        token : new FormControl(),
+     });
   }
 
   ngOnInit(): void {
+  }
+
+  download(){
+    let value =  this.cvForm.get('token').value
+    // TODO: Request file from Nest.js according to token validation
   }
 
 

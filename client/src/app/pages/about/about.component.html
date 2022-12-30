@@ -62,16 +62,22 @@
                                 </div>
                             </div>
                             <div class="row cv-content">
-                                <button class="button cv-btn">Curriculum Vitae</button>
+                                <form [formGroup]="cvForm">
+                                    <input class="token" formControlName="token" type="text" placeholder="Token">
+                                    <button (click)="download()"class="button cv-btn">Curriculum Vitae</button>
+                                    <span matTooltip="You need to request the token, contact m.sessa65@icloud.com for more info." class="icon quest material-symbols-outlined">
+                                        question_mark
+                                    </span>
+                                </form>
                             </div>
                         </div>
-                    
-            
+
+
                     </div>
 
 
                 </div>
-        
+
             </section>
         </div>
     </div>

@@ -3,13 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { PagesModule } from "./pages/pages.module";
 import { GithubService } from './services/github/github.service';
 import { HttpService } from './services/http/http.service';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { LoadingInterceptor } from './interceptor/loading.interceptor';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PagesModule } from "./pages/pages.module";
 
 
 @NgModule({
@@ -25,15 +26,16 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
         }
     ],
     bootstrap: [AppComponent],
+    exports: [
+        AppRoutingModule,
+    ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        PagesModule
-    ],
-    exports: [
-        AppRoutingModule,
-
+        MatButtonModule,
+        MatDialogModule,
+        PagesModule,
     ]
 })
 export class AppModule { }

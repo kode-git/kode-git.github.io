@@ -1,0 +1,14 @@
+[
+    {
+        "question": "What is the scope of this platform?",
+        "answer": "The scope of the kode-web platform is to provide a comprehensive overview of my information, projects, and other relevant details about me. Additionally, the platform offers services and data-driven games to enhance your user experience. The goal of kode-web is to serve as a one-stop destination for all of your personal and professional needs, giving you access to a wide range of resources and tools to help you achieve your goals. Whether you are looking for information, seeking support, or simply want to have some fun, kode-web has something to offer."
+    },
+    {
+        "question": "What types of services do you offer?",
+        "answer": "The services offered by our platform include freelancer services for the implementation and design of enterprise IT projects, academic tutoring for university exams preparation in Computer Science, and data services for the management of your business data. Our freelancer services can help you with the development and execution of IT projects, providing expertise in a variety of areas such as software development, database management, and system design. Our academic tutoring services are designed to help students prepare for university exams in Computer Science, offering guidance and support to ensure they have the knowledge and skills they need to succeed. Our data services provide support for the management and analysis of your business data, helping you to make informed decisions and optimize your operations. Overall, our goal is to provide a range of services that cater to the diverse needs of our users, helping them to achieve their goals and succeed in their professional and academic endeavors."
+    }, 
+    {
+        "question": "Which exams do you support for academic tutoring?",
+        "answer": "For academic tutoring, we offer support for exams in algorithms and data structures, operating systems, and network systems. These exams are typically taken as part of a Computer Science degree program and cover a wide range of topics that are essential for students to understand in order to succeed in their studies. Our tutors have expertise in these areas and are able to provide guidance and support to help students prepare for their exams. This may include review sessions, practice exams, and one-on-one tutoring to ensure that students have a solid foundation in these subjects. Overall, our goal is to provide students with the resources and support they need to succeed in their exams and achieve their academic goals. Whether you are just starting out in your studies or are preparing for a major exam, we are here to help you succeed."
+    }
+]

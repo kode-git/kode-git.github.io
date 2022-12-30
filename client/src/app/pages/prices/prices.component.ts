@@ -12,4 +12,8 @@ export class PricesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
+
+
 }

@@ -12,28 +12,46 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { PricesComponent } from './prices/prices.component';
+import { MailComponent } from './mail/mail.component';
+import { FaqComponent } from './faq/faq.component';
+import { TermsComponent } from './terms/terms.component';
+import { WindowComponent } from '../shared/window/window.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    NavbarComponent,
-    TerminalComponent,
-    IntroComponent,
-    FooterComponent,
-    AboutComponent,
-    ProjectsComponent,
-    PricesComponent,
-  ],
-  imports: [
-    CommonModule,
-    AppRoutingModule,
-    MatTooltipModule,
-    BrowserModule,
-    HttpClientModule
-  ],
-  exports : [
-    HomeComponent,
-    AboutComponent
-  ]
+    declarations: [
+        HomeComponent,
+        NavbarComponent,
+        TerminalComponent,
+        IntroComponent,
+        FooterComponent,
+        AboutComponent,
+        ProjectsComponent,
+        PricesComponent,
+        MailComponent,
+        FaqComponent,
+        TermsComponent,
+        WindowComponent,
+        PrivacyComponent,
+    ],
+    exports: [
+        HomeComponent,
+        AboutComponent,
+        PricesComponent,
+        ProjectsComponent,
+        MailComponent,
+        FaqComponent,
+        TermsComponent
+    ],
+    imports: [
+        CommonModule,
+        AppRoutingModule,
+        MatTooltipModule,
+        BrowserModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+    ]
 })
 export class PagesModule { }

@@ -1,0 +1,96 @@
+.main {
+    background-image: url('../../../assets/gradient.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 74vh;
+    /* minus the height of the footer */
+}
+
+.container {
+    width: 100%;
+    color: rgb(66, 66, 66);
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.header {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+    color: gray;
+}
+
+button:hover {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
+.card {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+header.window {
+    background: #ffffff;
+    height: 30px;
+    border-radius: 8px 8px 0 0;
+    padding-left: 10px;
+}
+
+
+.window-container header .button {
+    width: 12px;
+    height: 12px;
+    margin: 10px 4px 0 0;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.success {
+    color: #3BB662 !important;
+}
+
+.green {
+    background-color: #3BB662 !important;
+}
+
+.red {
+    background-color: #E75448 !important;
+}
+
+.yellow {
+    background-color: #E5C30F !important;
+}
+
+
+.window-container {
+    text-align: left;
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.window-fixed-top {
+    margin-top: 30px;
+}
+
+.window-home {
+    background-color: #ffffff;
+    padding: 1.5em 1em 1em 2em;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}

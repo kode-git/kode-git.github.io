@@ -1,0 +1,40 @@
+<div class="main">
+    <app-navbar></app-navbar>
+    <div class="container">
+        <section class="window-container window-fixed-top">
+            <header class="window">
+                <span class="button red"></span>
+                <span class="button yellow"></span>
+                <span class="button green"></span>
+            </header>
+            <div class="window-home">
+                <div class="header">
+                    <h1>Frequency Asking Questions</h1>
+                </div>
+                <div *ngFor="let faq of faqs" id="accordion">
+                    <div class="card" style="background-color: {{faq.color}}">
+                        <div class="card-header" id="heading-{{faq.collapse}}">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#{{faq.collapse}}"
+                                    aria-expanded="true" aria-controls="{{faq.collapse}}">
+                                    {{faq.question}}
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="{{faq.collapse}}" class="collapse show" aria-labelledby="heading-{{faq.collapse}}"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                {{faq.answer}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+</div>
+<app-footer></app-footer>

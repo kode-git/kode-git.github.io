@@ -1,0 +1,133 @@
+.main {
+  background-image: url('../../../assets/gradient.png');
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 74vh;
+  /* minus the height of the footer */
+}
+
+.container {
+  padding-bottom: 30px;
+}
+
+.form-box {
+  max-width: 500px;
+  margin: auto;
+  padding: 50px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.form-group{
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.btn{
+  margin-top: 20px;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+textarea{
+  margin-bottom: 20px;
+}
+
+
+header.window {
+  background: #ffffff;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+
+.window-container header .button-header {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.success {
+  color:  #3BB662 !important;
+}
+
+.green {
+  background-color: #3BB662 !important;
+}
+
+.red {
+  background-color: #E75448 !important;
+}
+
+.yellow {
+  background-color: #E5C30F !important;
+}
+
+
+.window-container {
+  text-align: left;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  max-width: 500px;
+}
+
+.window-fixed-top {
+  margin-top: 30px;
+}
+
+.window-home {
+  background-color: #ffffff;
+  padding: 1.5em 1em 1em 2em;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.button{
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-image: linear-gradient(white, rgb(239, 239, 239));
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.button:hover{
+  background-image: linear-gradient(rgb(239, 239, 239), white,);
+}
+
+.button:active{
+  background-image: linear-gradient(rgb(215, 215, 215), rgb(229, 229, 229),);
+}
+
+h1 {
+  font-size: 40px;
+}
