@@ -11,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { PricesComponent } from './prices/prices.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     AboutComponent,
     ProjectsComponent,
+    PricesComponent,
   ],
   imports: [
     CommonModule,
