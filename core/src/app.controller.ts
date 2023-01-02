@@ -14,22 +14,10 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Post('/verifyToken')
-  verifyToken(@Body() body: any, @Res() res: any) {
+  @Post()
+  checkToken(@Body() body: any, @Res() res: any) {
     const token = body.token;
-    // verify token to RedisManager
-    const result = this.redisManager.verifyToken(token);
+    const result = this.redisManager.checkToken(token);
     res.send(result);
-  }
-
-  @Post('/generateToken')
-  generateToken(@Body() body: any, @Res() res: any){
-    // generate a token to RedisManager
-    const email = body.email;
-    const ip = body.ip;
-    const number = body.number;
-
-    const token = this.redisManager.generateToken(email, ip, number);
-    res.send(token);
   }
 }
