@@ -8,6 +8,7 @@ import { MailComponent } from './pages/mail/mail.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
+import { StateComponent } from './pages/state/state.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'mail', component: MailComponent},
   { path: 'faq', component : FaqComponent},
   { path : 'terms', component : TermsComponent},
-  { path : 'privacy', component : PrivacyComponent}
+  { path : 'privacy', component : PrivacyComponent},
+  {path : 'state', component: StateComponent}
 ];
 
 @NgModule({

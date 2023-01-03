@@ -3,13 +3,13 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 
 class Skill {
-  name : string; // name of the skill
+  name: string; // name of the skill
   level: number; // level of the skill (0 to 100) is in percentage
-  image : string; // url of the image
+  image: string; // url of the image
   color: string; // color of the skill background (gray or white)
-  backgroundColor : string // color of the background for the progress bar
+  backgroundColor: string // color of the background for the progress bar
 
-  constructor(name : string, level : number, image : string, color : string, backgroundColor : string){
+  constructor(name: string, level: number, image: string, color: string, backgroundColor: string) {
     this.name = name;
     this.level = level;
     this.image = image;
@@ -25,10 +25,10 @@ class Skill {
 })
 export class AboutComponent implements OnInit {
 
-  skills : Skill[];
-  cvForm : FormGroup;
+  skills: Skill[];
+  cvForm: FormGroup;
 
-  constructor() { 
+  constructor() {
 
     // Temporal: Information will be store in a Redis database
     this.skills = [
@@ -39,32 +39,37 @@ export class AboutComponent implements OnInit {
       new Skill('MySQL', 85, 'assets/skills/mysql.png', '#FAFAFA', '#ECECEC'),
       new Skill('Node.js', 83, 'assets/skills/node.png', '#ECECEC', '#FAFAFA'),
       new Skill('Redis', 80, 'assets/skills/redis.png', '#FAFAFA', '#ECECEC'),
-      new Skill('Flask', 78, 'assets/skills/flask.png','#ECECEC', '#FAFAFA'),
-      new Skill('Angular', 77, 'assets/skills/angular.png','#FAFAFA', '#ECECEC'),
+      new Skill('Flask', 78, 'assets/skills/flask.png', '#ECECEC', '#FAFAFA'),
+      new Skill('Angular', 77, 'assets/skills/angular.png', '#FAFAFA', '#ECECEC'),
       new Skill('Django', 75, 'assets/skills/django.png', '#ECECEC', '#FAFAFA'),
-      new Skill('PyTorch', 70, 'assets/skills/pytorch.png',  '#FAFAFA', '#ECECEC'),
-      new Skill('Apache Hadoop', 68, 'assets/skills/hadoop.png','#ECECEC', '#FAFAFA'),
+      new Skill('PyTorch', 70, 'assets/skills/pytorch.png', '#FAFAFA', '#ECECEC'),
+      new Skill('Apache Hadoop', 68, 'assets/skills/hadoop.png', '#ECECEC', '#FAFAFA'),
       new Skill('Apache Hive', 67, 'assets/skills/hive.png', '#FAFAFA', '#ECECEC'),
       new Skill('Apache Spark', 65, 'assets/skills/spark.png', '#ECECEC', '#FAFAFA'),
       new Skill('InfluxDB', 60, 'assets/skills/influxdb.png', '#FAFAFA', '#ECECEC'),
-      new Skill('Grafana',60, 'assets/skills/grafana.png','#ECECEC', '#FAFAFA'),
+      new Skill('Grafana', 60, 'assets/skills/grafana.png', '#ECECEC', '#FAFAFA'),
       new Skill('AWS', 50, 'assets/skills/aws.png', '#FAFAFA', '#ECECEC'),
       new Skill('Kubernetes', 40, 'assets/skills/kubernetes.png', '#ECECEC', '#FAFAFA'),
       new Skill('Apache Airflow', 30, 'assets/skills/airflow.png', '#FAFAFA', '#ECECEC'),
-      new Skill('GraphQL', 20, 'assets/skills/graphql.png','#ECECEC', '#FAFAFA'),
+      new Skill('GraphQL', 20, 'assets/skills/graphql.png', '#ECECEC', '#FAFAFA'),
     ]
 
-    this.cvForm = new FormGroup({
-        token : new FormControl(),
-     });
+    this.cvForm = new FormGroup({});
   }
 
   ngOnInit(): void {
   }
 
-  download(){
-    let value =  this.cvForm.get('token').value
-    // TODO: Request file from Nest.js according to token validation
+  download() {
+    let value = this.cvForm.get('token').value
+    const link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', 'https://drive.google.com/file/d/1u8CkeZLftnndjSpvHEBxWlaIsKsgfF_P/view?usp=sharing');
+    link.setAttribute('download', '1u8CkeZLftnndjSpvHEBxWlaIsKsgfF_P.pdf');
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
   }
 
 

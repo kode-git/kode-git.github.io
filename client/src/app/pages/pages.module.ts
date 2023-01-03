@@ -18,6 +18,7 @@ import { TermsComponent } from './terms/terms.component';
 import { WindowComponent } from '../shared/window/window.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StateComponent } from './state/state.component';
 
 @NgModule({
     declarations: [
@@ -34,6 +35,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         TermsComponent,
         WindowComponent,
         PrivacyComponent,
+        StateComponent,
     ],
     exports: [
         HomeComponent,

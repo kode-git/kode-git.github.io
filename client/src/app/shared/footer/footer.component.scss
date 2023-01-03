@@ -4,11 +4,9 @@ $footer-background-light-grey: #212529;
 $footer-background-grey: #1a1d20;
 $social-buttons-circle-dark-grey: #1a1d20;
 
-.col-md-4:nth-child(even) {
-  // background: blue;
-}
-.col-md-4:nth-child(odd) {
-  // background: red;
+footer{
+  min-width: 100%;
+  min-height: 270px;
 }
 
 a {
